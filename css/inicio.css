@@ -1,0 +1,152 @@
+:root {
+  --oscuro: #000000;
+  --fondo: #0a7e50;
+  --footer: #6c7744;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--oscuro);
+}
+
+header {
+  width: 100%;
+  min-height: 625px;
+}
+footer {
+  background-color: var(--footer);
+}
+
+.navbar .nav-link {
+  transition: 0.2s;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+a.nav-link:hover {
+  padding-bottom: 3px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.bg-light {
+  background-color: var(--fondo) !important;
+}
+/* section */
+section {
+  padding: 82px 0;
+}
+
+.section-bg {
+  background-color: var(--fondo);
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #fc562c;
+}
+
+/* footer */
+
+footer {
+  border-top: 1px solid #7e7e7e;
+  padding-top: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer .container {
+  padding-top: 0px;
+}
+
+/* ultimos ajustes */
+
+@media (max-width: 992px) {
+  .wave {
+    padding-top: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-center-xs {
+    text-align: center;
+  }
+  .text-center-xs img {
+    width: 366px;
+  }
+}
+
+.section-bg {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.sec {
+  padding-top: 50px;
+}
+
+.p-top {
+  padding-top: 80px;
+}
+.hh {
+  font-family: "Courier New", Courier, monospace;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(0, 0, 0);
+}
+.navbar-light .navbar-brand {
+  color: rgb(0, 0, 0);
+}
+
+.col-md-6 .im {
+  animation: animateAfter 2s linear infinite;
+}
+@keyframes animateBefore {
+  0%,
+  100% {
+    transform: rotateZ(3deg);
+  }
+  50% {
+    transform: rotateZ(-3deg);
+  }
+}
+
+@keyframes animateAfter {
+  0%,
+  100% {
+    transform: rotateZ(-3deg);
+  }
+  50% {
+    transform: rotateZ(3deg);
+  }
+}
+.animate__animated.animate__zoomInDown {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 2s;
+}
+.animate__animated.animate__backInLeft {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__backInRight {
+  --animate-duration: 3s;
+}
+
+header .p-top {
+  padding-top: 8rem;
+}
